@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets" >
+
+  <h:head>
+
+  </h:head>
+
+  <h:body>
+        <h:form>
+            <h:messages id="messages" />
+            <h:panelGrid columns="2" >
+            <h:outputLabel value="Email user : "/>
+            <h:inputText value="#{ScheduleDataMB.email}"/>
+            <h:outputLabel value="Password :"/>
+            <h:inputSecret value="#{ScheduleDataMB.password}"/>
+            </h:panelGrid>
+            <h:commandButton value="Sign In"
+                             action="#{ScheduleDataMB.signIn(ScheduleDataMB)}"/>
+            <br></br>
+            <h:commandButton value="Registration"
+                             action="#{UserMB.registration()}"/>
+
+        </h:form>
+  </h:body>
+  </html>

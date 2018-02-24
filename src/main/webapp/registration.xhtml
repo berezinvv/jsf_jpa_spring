@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+<h:head>
+
+</h:head>
+
+<h:body>
+    <h:form>
+        <h:messages id="messages" />
+        <h:panelGrid columns="2">
+            <h:outputLabel value="Email user : "/>
+            <h:inputText requiredMessage="Please enter your email address."
+                         validatorMessage="Invalid email format" value="#{UserMB.email}">
+            <f:validateRegex
+                    pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+            </h:inputText>
+            <h:outputLabel value="Password :"/>
+            <h:inputText value="#{UserMB.password}"/>
+            <h:outputLabel value="User name :"/>
+            <h:inputText value="#{UserMB.userName}"/>
+        </h:panelGrid>
+            <h:commandButton value="Registration"
+                         action="#{UserMB.createUser(UserMB)}"/>
+    </h:form>
+</h:body>
+</html>
