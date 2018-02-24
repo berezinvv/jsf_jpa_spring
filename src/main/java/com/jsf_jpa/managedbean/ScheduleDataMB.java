@@ -1,23 +1,20 @@
 package com.jsf_jpa.managedbean;
 
 import com.jsf_jpa.entity.ScheduleData;
-import com.jsf_jpa.entity.User;
-import com.jsf_jpa.repository.ScheduleDataRepository;
 import com.jsf_jpa.service.ScheduleDataService;
 import com.jsf_jpa.service.UserService;
-import org.primefaces.context.RequestContext;
 import org.primefaces.event.SelectEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.faces.application.FacesMessage;
-import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
-import java.io.IOException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Component("ScheduleDataMB")
@@ -32,8 +29,9 @@ public class ScheduleDataMB {
     private Date date;
     private int value;
     private String note;
-    private List<ScheduleData> scheduleDataList  = new ArrayList<>();
+    private List<ScheduleData> scheduleDataList = new ArrayList<>();
     private String scheduleDataString = "[]";
+
     public ScheduleDataMB() {
     }
 
@@ -79,10 +77,6 @@ public class ScheduleDataMB {
 //        password = null;
 //        return"index.xhtml";
 //    }
-
-
-
-
 
 
     public Date getDateFrom() {
@@ -151,22 +145,22 @@ public class ScheduleDataMB {
         this.scheduleDataService = scheduleDataService;
     }
 
-    public void findScheduleData(SelectEvent event){
+    public void findScheduleData(SelectEvent event) {
         scheduleDataList.clear();
         scheduleDataString = "[";
 
 
-       if (dateFrom != null && dateTo != null){
-            scheduleDataList = scheduleDataService.findAllByPeriod((Long)dateFrom.getTime(), (Long)dateTo.getTime());
-       }
-        for (ScheduleData sD:scheduleDataList){
+        if (dateFrom != null && dateTo != null) {
+            scheduleDataList = scheduleDataService.findAllByPeriod((Long) dateFrom.getTime(), (Long) dateTo.getTime());
+        }
+        for (ScheduleData sD : scheduleDataList) {
             scheduleDataString += "[" + sD.getDate() + "," + sD.getValue() + "],";
         }
         scheduleDataString += "]";
         FacesContext.getCurrentInstance().getPartialViewContext().getRenderIds().add("linechart");
     }
 
-    public void clear(){
+    public void clear() {
         scheduleDataService.deleteAll();
         FacesContext.getCurrentInstance().addMessage(
                 null,
@@ -174,11 +168,12 @@ public class ScheduleDataMB {
                         " Successfully completed (clear)"));
 
     }
-    public void generate(){
+
+    public void generate() {
 
         List<ScheduleData> sDataList = scheduleDataService.findAll();
 
-        if (sDataList.size() != 0){
+        if (sDataList.size() != 0) {
             FacesContext.getCurrentInstance().addMessage(
                     null,
                     new FacesMessage(FacesMessage.SEVERITY_INFO, "Data can`t be added",
@@ -198,7 +193,8 @@ public class ScheduleDataMB {
             Date beginDate = new Date();
             try {
                 beginDate = sdf.parse(dateInString);
-            }catch (Exception e){}
+            } catch (Exception e) {
+            }
 
             long randomDate = ThreadLocalRandom.current().nextLong(beginDate.getTime(), new Date().getTime());
             scheduleData.setDate(randomDate);
@@ -211,14 +207,14 @@ public class ScheduleDataMB {
     }
 
 
-    public String add(){
+    public String add() {
         return "page2.xhtml";
     }
 
-    public void addData(ScheduleDataMB scheduleDataMB){
+    public void addData(ScheduleDataMB scheduleDataMB) {
         ScheduleData scheduleData = new ScheduleData();
 
-        scheduleData.setDate((Long)scheduleDataMB.date.getTime());
+        scheduleData.setDate((Long) scheduleDataMB.date.getTime());
         scheduleData.setNote(scheduleDataMB.note);
         scheduleData.setValue(scheduleDataMB.value);
         try {
@@ -227,7 +223,7 @@ public class ScheduleDataMB {
                     null,
                     new FacesMessage(FacesMessage.SEVERITY_INFO, "Successfully completed",
                             "Successfully completed"));
-        }catch (Exception e) {
+        } catch (Exception e) {
             FacesContext.getCurrentInstance().addMessage(
                     null,
                     new FacesMessage(FacesMessage.SEVERITY_INFO, "Not successful",

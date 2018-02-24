@@ -15,9 +15,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-//    @Autowired
-//    private SecurityService securityService;
-
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registration(Model model) {
@@ -35,7 +32,6 @@ public class UserController {
 
         userService.create(userForm);
 
-       // securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 
         return "redirect:/login";
     }
@@ -50,6 +46,7 @@ public class UserController {
 
         return "login";
     }
+
 
     @RequestMapping(value = {"/", "/login"}, method = RequestMethod.GET)
     public String welcome(Model model) {

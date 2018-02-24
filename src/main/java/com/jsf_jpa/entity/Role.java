@@ -1,20 +1,19 @@
 package com.jsf_jpa.entity;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "role")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="user_role_id")
+    @Column(name = "user_role_id")
     private Long userroleid;
 
-    @Column(name="userid")
+    @Column(name = "userid")
     private Long userid;
 
-    @Column(name="role")
+    @Column(name = "role")
     private String role;
 
     public String getRole() {

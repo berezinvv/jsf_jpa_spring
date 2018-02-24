@@ -32,6 +32,7 @@ public class ScheduleDataServiceImpl implements ScheduleDataService {
     public List<ScheduleData> findAll() {
         return scheduleDataRepository.findAll();
     }
+
     @Override
     public void deleteAll() {
         scheduleDataRepository.deleteAll();

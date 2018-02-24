@@ -2,30 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:ui="http://java.sun.com/jsf/facelets" >
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 
-  <h:head>
+<h:head>
+    <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+</h:head>
 
-  </h:head>
-
-  <h:body>
-      <form method="post" action="${contextPath}/login" class="form-signin">
-          <div class="lc-block">
-              <div>
-                  <input type="text" class="style-4" name="username"
-                         placeholder="User Name" />
-              </div>
-              <div>
-                  <input type="password" class="style-4" name="password"
-                         placeholder="Password" />
-              </div>
-              <div>
-                  <input type="submit" value="Sign In" class="button red small" />
-              </div>
-          </div>
-          <input type="hidden" name="${_csrf.parameterName}"
-                 value="${_csrf.token}" />
-
-      </form>
-  </h:body>
-  </html>
+<h:body>
+    <form method="post" action="${contextPath}/login" class="form-signin">
+        <div class="form-group ${error != null ? 'has-error' : ''}">
+            <input type="text" class="form-control" placeholder="Username"
+                   autofocus="true"/>
+        </div>
+        <div>
+            <input name="password" type="password" class="form-control" placeholder="Password"/>
+        </div>
+        <div>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign In"/>
+        </div>
+        <div>
+            <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
+        </div>
+    </form>
+</h:body>
+</html>

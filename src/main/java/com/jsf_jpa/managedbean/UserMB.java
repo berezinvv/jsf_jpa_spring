@@ -1,16 +1,12 @@
 package com.jsf_jpa.managedbean;
 
 import com.jsf_jpa.entity.User;
-import com.jsf_jpa.repository.UserRepository;
 import com.jsf_jpa.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
 @Component("UserMB")

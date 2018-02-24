@@ -4,25 +4,29 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets" >
 
+
   <h:head>
 
   </h:head>
 
   <h:body>
-        <h:form>
-            <h:messages id="messages" />
-            <h:panelGrid columns="2" >
-            <h:outputLabel value="Email user : "/>
-            <h:inputText value="#{ScheduleDataMB.email}"/>
-            <h:outputLabel value="Password :"/>
-            <h:inputSecret value="#{ScheduleDataMB.password}"/>
-            </h:panelGrid>
-            <h:commandButton value="Sign In"
-                             action="#{ScheduleDataMB.signIn(ScheduleDataMB)}"/>
-            <br></br>
-            <h:commandButton value="Registration"
-                             action="#{UserMB.registration()}"/>
+      <form method="post" action="${contextPath}/login" class="form-signin">
+          <div class="lc-block">
+              <div>
+                  <input type="text" class="form-control" name="username"
+                         placeholder="User Name" />
+              </div>
+              <div>
+                  <input type="password" class="form-control" name="password"
+                         placeholder="Password" />
+              </div>
+              <div>
+                  <input type="submit" value="Sign in" class="button red small" />
+              </div>
+          </div>
+          <input type="hidden" name="${_csrf.parameterName}"
+                 value="${_csrf.token}" />
 
-        </h:form>
+      </form>
   </h:body>
   </html>
