@@ -7,11 +7,8 @@ import javax.persistence.*;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "user_role_id")
-    private Long userroleid;
-
-    @Column(name = "userid")
-    private Long userid;
+    @Column(name = "role_id")
+    private Long id;
 
     @Column(name = "role")
     private String role;
@@ -24,20 +21,12 @@ public class Role {
         this.role = role;
     }
 
-    public Long getUserid() {
-        return userid;
+    public Long getId() {
+        return id;
     }
 
-    public void setUserid(Long userid) {
-        this.userid = userid;
-    }
-
-    public Long getUserroleid() {
-        return userroleid;
-    }
-
-    public void setUserroleid(Long userroleid) {
-        this.userroleid = userroleid;
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }

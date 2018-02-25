@@ -8,11 +8,11 @@ com\jsf_jpa\repository\ScheduleDataRepository.class
 com\jsf_jpa\managedbean\UserMB.class
 com\jsf_jpa\config\WebSecurityConfig.class
 com\jsf_jpa\security\CustomUserDetailsService.class
+com\jsf_jpa\config\SpringWebAppInitializer.class
 com\jsf_jpa\service\UserService.class
 com\jsf_jpa\repository\RoleRepository.class
 com\jsf_jpa\entity\Role.class
 com\jsf_jpa\security\CustomUserDetails.class
 com\jsf_jpa\config\JpaConfig.class
-com\jsf_jpa\controller\UserController.class
 com\jsf_jpa\service\UserServiceImpl.class
 com\jsf_jpa\service\ScheduleDataServiceImpl.class

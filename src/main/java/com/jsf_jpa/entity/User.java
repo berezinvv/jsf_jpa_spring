@@ -2,6 +2,8 @@ package com.jsf_jpa.entity;
 
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "Users")
@@ -19,14 +21,19 @@ public class User {
     @Column(name = "userName", nullable = false)
     private String userName;
 
+    @OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+    @JoinColumn(name="user_id")
+    private Set<Role> roles = new HashSet<>();
+
 
     public User() {
     }
 
-    public User(String email, String password, String userName) {
+    public User(String email, String password, String userName, Set<Role> roles) {
         this.email = email;
         this.password = password;
         this.userName = userName;
+        this.roles = roles;
     }
 
     public User(User user) {
@@ -58,6 +65,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
 }

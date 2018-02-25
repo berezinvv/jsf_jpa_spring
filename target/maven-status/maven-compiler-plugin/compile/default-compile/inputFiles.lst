@@ -1,13 +1,13 @@
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\entity\Role.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\repository\RoleRepository.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\service\UserService.java
+C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\config\SpringWebAppInitializer.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\config\WebSecurityConfig.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\entity\ScheduleData.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\config\MvcConfig.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\entity\User.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\repository\ScheduleDataRepository.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\service\UserServiceImpl.java
-C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\controller\UserController.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\managedbean\ScheduleDataMB.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\managedbean\UserMB.java
 C:\Users\Виталик\IdeaProjects\jsf_jpa_spring\src\main\java\com\jsf_jpa\service\ScheduleDataService.java
