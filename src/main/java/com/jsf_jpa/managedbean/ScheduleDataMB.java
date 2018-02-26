@@ -35,8 +35,10 @@ public class ScheduleDataMB {
     private String scheduleDataString = "[]";
 
     public ScheduleDataMB() {
-        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        this.email = userDetails.getUsername();
+        try {
+            UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            this.email = userDetails.getUsername();
+        }catch (Exception e){}
     }
 
     @Autowired
