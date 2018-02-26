@@ -6,6 +6,8 @@ import com.jsf_jpa.service.UserService;
 import org.primefaces.event.SelectEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.faces.application.FacesMessage;
@@ -33,6 +35,8 @@ public class ScheduleDataMB {
     private String scheduleDataString = "[]";
 
     public ScheduleDataMB() {
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        this.email = userDetails.getUsername();
     }
 
     @Autowired
@@ -45,7 +49,7 @@ public class ScheduleDataMB {
         return email;
     }
 
-    public void setEmail(String email) {
+        public void setEmail(String email) {
         this.email = email;
     }
 
