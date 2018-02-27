@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d3a126-750a-4de5-8f93-bace0b443552" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jsf_jpa/myscript2.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/templates/main.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/templates/page2.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/page2.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jsf_jpa/config/MvcConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/jsf_jpa/config/MvcConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jsf_jpa/managedbean/ScheduleDataMB.class" afterPath="$PROJECT_DIR$/target/classes/com/jsf_jpa/managedbean/ScheduleDataMB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa.war" afterPath="$PROJECT_DIR$/target/jsf_jpa.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/config/MvcConfig.class" afterPath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/config/MvcConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/config/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/config/WebSecurityConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/managedbean/ScheduleDataMB.class" afterPath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/managedbean/ScheduleDataMB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/managedbean/ScheduleDataMB.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/managedbean/ScheduleDataMB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa/main.xhtml" afterPath="$PROJECT_DIR$/target/jsf_jpa/main.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa/resources/templates/header.xhtml" afterPath="$PROJECT_DIR$/target/jsf_jpa/resources/templates/header.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+            <state relative-caret-position="561">
+              <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MvcConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MvcConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="238">
+              <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,16 +114,6 @@
                 <element signature="e#1664#1665#0" expanded="true" />
                 <element signature="method#addData#0;class#ScheduleDataMB#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -219,10 +197,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/templates/main.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/templates/header.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/managedbean/ScheduleDataMB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page2.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/main.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" />
       </list>
     </option>
   </component>
@@ -261,8 +239,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1890" />
-    <option name="y" value="55" />
+    <option name="x" value="-3" />
+    <option name="y" value="6" />
     <option name="width" value="1932" />
     <option name="height" value="1045" />
   </component>
@@ -569,7 +547,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -580,7 +558,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -613,7 +591,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/myscript2.js___jb_old___" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.003/TextGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/templates/plot.xhtml">
       <provider selected="true" editor-type-id="text-editor">
@@ -896,16 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page2.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -922,10 +889,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.1.RELEASE/spring-security-config-4.2.1.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        <state relative-caret-position="561">
+          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
