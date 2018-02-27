@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d3a126-750a-4de5-8f93-bace0b443552" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jsf_jpa/config/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/jsf_jpa/config/WebSecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa.war" afterPath="$PROJECT_DIR$/target/jsf_jpa.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/config/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/target/jsf_jpa/WEB-INF/classes/com/jsf_jpa/config/WebSecurityConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+            <state relative-caret-position="340">
+              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MvcConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MvcConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            <state relative-caret-position="196">
+              <caret line="22" column="80" lean-forward="false" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,8 +203,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/managedbean/ScheduleDataMB.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/page2.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/main.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -865,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/security/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page2.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -897,20 +893,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/security/CustomUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state relative-caret-position="187">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="22" column="80" lean-forward="false" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/MvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsf_jpa/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        <state relative-caret-position="340">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
